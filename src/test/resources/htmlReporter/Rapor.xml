@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="99.932" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="Siteye ulasilabilmeli" name="" time="99.658">
+<system-out><![CDATA[
+Given Web sitesine git......................................................passed
+Then Arama kutusunda "kablo" kelimesi arat..................................passed
+And Arama sonuclarindan bir urun sec........................................passed
+And Secilen urunu sepete ekle...............................................passed
+And Giris yapmadan devam et.................................................passed
+And Kullanici sozlesmesi kutucugunu isaretle................................passed
+And Siparise devam et.......................................................passed
+And Ad soyad kutusuna "Murat Yaman" bilgisi gir.............................passed
+And Telefon no kutusuna "5533709146" gir....................................passed
+And Mail adresi kutusuna "muratyaman06@hotmail.com" gir.....................passed
+And Tc kimlik no kutusuna "10156174982" gir.................................passed
+And Teslimat ili sec........................................................passed
+And Teslimat ilini "istanbul" olarak isaretle...............................passed
+And Teslimat ilcesi sec.....................................................passed
+And Teslimat ilcesini "Güngören" olarak isaretle............................passed
+And Teslim alacak kisi AdSoyad kutusuna "Murat Yaman" bilgisi gir...........passed
+And Teslim alacak kisi telefon no kutusuna "5533709146" gir.................passed
+And Teslim alacak kisi adres kutusuna "Cumhuriyet Mahallesi Sakız sokak no:30" gir.passed
+And Kart sayfasi ad soyad kutusuna "Murat Yaman" bilgisi gir................passed
+And Kart numarasi kutusuna "5200190006338608" bilgisi gir...................passed
+And Son kullanma tarihi olarak ay bilgisi sec...............................passed
+And Son kullanma tarihi olarak yil bilgisi sec..............................passed
+And Güvenlik numarasi bolumune "410" bilgisi gir............................passed
+And Siparis ozeti sayfasinda Satıs sozlesmesi goruldugunu dogrula...........passed
+Then Sayfayi kapatir........................................................passed
+]]></system-out>
+</testcase>
+</testsuite>
