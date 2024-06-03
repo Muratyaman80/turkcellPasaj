@@ -1,13 +1,12 @@
-Feature: Siteye ulasilabilmeli
+Feature: tcellpasaj
   Scenario:
-Given Web sitesine git
+  Given Web sitesine git
   Then Arama kutusunda "kablo" kelimesi arat
   And Arama sonuclarindan bir urun sec
   And Secilen urunu sepete ekle
   And Giris yapmadan devam et
   And Kullanici sozlesmesi kutucugunu isaretle
   And Siparise devam et
-
 
   And Ad soyad kutusuna "Murat Yaman" bilgisi gir
   And Telefon no kutusuna "5533709146" gir
@@ -16,7 +15,7 @@ Given Web sitesine git
   And Teslimat ili sec
   And Teslimat ilini "istanbul" olarak isaretle
   And Teslimat ilcesi sec
-  And Teslimat ilcesini "Güngören" olarak isaretle
+  And Teslimat ilcesini "Bahçelievler" olarak isaretle
   And Teslim alacak kisi AdSoyad kutusuna "Murat Yaman" bilgisi gir
   And Teslim alacak kisi telefon no kutusuna "5533709146" gir
   And Teslim alacak kisi adres kutusuna "Cumhuriyet Mahallesi Sakız sokak no:30" gir
