@@ -16,7 +16,7 @@ import org.junit.runner.RunWith;
         monochrome = true,
         features = "src/test/resources/ui_features",
         glue = {"turkcell_pasaj/stepdefs", "turkcell_pasaj/hooks"},
-        tags = "",
+        tags = " ",
         dryRun = false
 )
 public class Runner {

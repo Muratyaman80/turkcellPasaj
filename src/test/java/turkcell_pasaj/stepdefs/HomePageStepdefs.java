@@ -1,10 +1,11 @@
 package turkcell_pasaj.stepdefs;
 
+import io.cucumber.java.PendingException;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
+import org.junit.Assert;
 import org.openqa.selenium.Keys;
-import org.openqa.selenium.WindowType;
 import org.openqa.selenium.interactions.Actions;
 import turkcell_pasaj.pages.HomePage;
 import turkcell_pasaj.utilities.ConfigReader;
@@ -66,9 +67,9 @@ public class HomePageStepdefs {
 
     @And("Siparise devam et")
     public void sipariseDevamEt() {
-        ReusableMethods.bekle(1);
-        actions.sendKeys(Keys.ARROW_DOWN,Keys.ARROW_DOWN,Keys.ARROW_DOWN).perform();
-        ReusableMethods.bekle(1);
+        ReusableMethods.bekle(2);
+        actions.sendKeys(Keys.ARROW_DOWN,Keys.ARROW_DOWN).perform();
+        ReusableMethods.bekle(2);
         homePage.sipariseDevamEt.click();
         ReusableMethods.bekle(2);
     }
@@ -194,9 +195,29 @@ public class HomePageStepdefs {
 
     }
 
+    /////////////////NEGATIF SENARYO ////////////////////////
+
+    @And("Siparisin gerceklesmedigini dogrula")
+    public void siparisinGerceklesmediginiDogrula() {
+        ReusableMethods.bekle(2);
+        Assert.assertTrue(homePage.kullaniciSozlesmesiBos.isDisplayed());
+    }
+
+    @And("Siparise devam edilemedigini dogrula")
+    public void sipariseDevamEdilemediginiDogrula() {
+        ReusableMethods.bekle(1);
+        Assert.assertTrue(homePage.teslimatAdSoyadBos.isDisplayed());
+    }
+
+    @And("Siparise devam et butonunun aktif olmadigini dogrula")
+    public void sipariseDevamEtButonununAktifOlmadiginiDogrula() {
+        ReusableMethods.bekle(2);
+        Assert.assertFalse(homePage.buttonDisabled.isEnabled());
+    }
+
     @Then("Sayfayi kapatir")
     public void sayfayiKapatir() {
         Driver.closeDriver();
     }
 
-}
+};
