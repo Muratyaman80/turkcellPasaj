@@ -53,16 +53,10 @@ public class HomePage {
 
     //Negatif Senaryo///////////////////////////////////////
 
-    @FindBy(xpath = "//a[@class='a-btn-icon m-basket-card__delete js-card-delete']") public WebElement sepetSil;
-    @FindBy(xpath = "//a[@class='a-btn js-card-delete-btn']") public WebElement evetButonu;
-    @FindBy(xpath = "//h3[contains(text(),'Sepetinizde ürün bulunmamaktadır.')]") public WebElement sepetBosUyarisi;
 
     @FindBy(xpath = "//li[@class='parsley-required']") public WebElement kullaniciSozlesmesiBos;
     @FindBy(xpath = "//ul[@id='parsley-id-5']") public WebElement teslimatAdSoyadBos;
     @FindBy(xpath = "//button[@class='a-btn a-btn--full js-submit-button a-btn--disabled']") public WebElement buttonDisabled;
-  //  @FindBy(xpath = " ") public WebElement xxx;
-  //  @FindBy(xpath = " ") public WebElement xxx;
-  //  @FindBy(xpath = " ") public WebElement xxx;
 
 
 
